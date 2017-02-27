@@ -54,8 +54,8 @@ language for days and months.
 "en" default.  
 * `firstDay`  
 number of the first day of the week.  
-"1" for Sunday.  
-1 default.  
+"0" for Sunday.  
+0 default.  
   
 Adding more options...
 
