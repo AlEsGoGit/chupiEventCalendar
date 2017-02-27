@@ -32,7 +32,7 @@
 	/* default options */ 
 	ChupiEventCalendar.prototype.defaults={
 		lan:"en",
-		firstDay: 2,
+		firstDay: 0,
 	};
 
 	/* API */
