@@ -3,13 +3,18 @@ Easy JS Calendar with event management.
 ## How To
 Create a ChupiEventCalendar object and provide a container as parameter in the constructor:  
 `var calendar=new ChupiEventCalendar(containerDiv)`;
+Also, you can set an object "options" as second parameter.
   
 Use it!  
 
 ##API  
 
 `.setDate(Date date)`  
-Change the current date in the calendar.  
+Change the current date in the calendar.
+
+`.setOptions(Object options)`  
+Change the current options.  
+See below for options details.
   
 `.loadEvents(Array events)`  
 Load the events wich have to be marked in the calendar.
@@ -26,7 +31,7 @@ Provide the events you want to be displayed below the calendar.
 `.showEventsPanel()`  
 Show the panel below the calendar.  
   
-`hideEventsPanel()`
+`hideEventsPanel()`  
 Hide the panel below the calendar.
 
 `previousClick(Function callback)`  
@@ -37,3 +42,26 @@ You can provide a function you want to be "triggered" when the next button is cl
   
 `nextClick(Function callback)`  
 You can provide a function you want to be "triggered" when a day is clicked.  
+
+
+##Options  
+Options are set as a default java script object.  
+These are the available options:  
+* lang: "en"|"es"  
+language for days and months.  
+"en" default  
+* firstDay  
+number of the first day of the week.  
+"1" for Sunday  
+1 default  
+  
+Adding more options...
+
+##Events  
+The calendar needs an array of Event object to work properly.  
+The object "event" has these properties:  
+* day  
+* month  
+* year  
+* title  
+* content
