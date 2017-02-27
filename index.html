@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="chupiEventCalendar.css">
+</head>
+<body>
+
+	<div id="calendar"></div>
+	<div id="prueba"></div>
+	
+	<script type="text/javascript" src="chupiEventCalendar.js"></script>
+	<script type="text/javascript">
+		var container=document.getElementById('calendar');
+		var calendar=new ChupiEventCalendar(container,{lan: 'es',firstDay: 1});
+
+		calendar.dayClick(function(){alert(this.getAttribute("data-day"))});
+
+		calendar.loadEvents([{title:"titulo",content:"contenido",day:8,month:2,year:2017},{day:15,month:2,year:2017},{day:14,month:2,year:2018}]);
+
+		calendar.loadEventsPanel([{title:"titulo",content:"contenido",day:8,month:2,year:2017},{day:15,month:2,year:2017},{day:14,month:2,year:2018}]);
+
+	</script>
+</body>
+</html>
