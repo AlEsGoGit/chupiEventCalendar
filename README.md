@@ -25,7 +25,7 @@ Remove the current events loaded.
 `.refresh()`  
 Repaint the calendar. Needed after changing events, date...  
   
-`.loadEventsPanel(Array events)`
+`.loadEventsPanel(Array events)`  
 Provide the events you want to be displayed below the calendar.  
   
 `.showEventsPanel()`  
@@ -49,11 +49,11 @@ Options are set as a default java script object.
 These are the available options:  
 * `lang: "en"|"es"`  
 language for days and months.  
-"en" default  
+"en" default.  
 * `firstDay`  
 number of the first day of the week.  
-"1" for Sunday  
-1 default  
+"1" for Sunday.  
+1 default.  
   
 Adding more options...
 
