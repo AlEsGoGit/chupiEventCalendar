@@ -33,6 +33,9 @@ Provide the events you want to be displayed below the calendar.
 `.showEventsPanel()`  
 Show the panel below the calendar.  
   
+`.getEvents(Date date)`  
+Get loaded events for the date provided.  
+  
 `hideEventsPanel()`  
 Hide the panel below the calendar.
 
