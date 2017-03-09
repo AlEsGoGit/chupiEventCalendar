@@ -107,11 +107,11 @@
 	/* Custom events */
 
 	ChupiEventCalendar.prototype.previousClick=function(callback){
-		this.previousButton.addEventListener('click',callback,false);
+		this.previousButton.addEventListener('click',callback.bind(this),false);
 	}
 
 	ChupiEventCalendar.prototype.nextClick=function(callback){
-		this.nextButton.addEventListener('click',callback,false);
+		this.nextButton.addEventListener('click',callback.bind(this),false);
 	}
 
 	ChupiEventCalendar.prototype.dayClick=function(callback){
