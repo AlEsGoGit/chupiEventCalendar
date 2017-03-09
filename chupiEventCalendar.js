@@ -56,6 +56,19 @@
 		this.currentEvents=[];
 		this.refresh();
 	}
+	
+	ChupiEventCalendar.prototype.getEvents=function(date = new Date()){
+		var day=date.getDate(),
+			month=date.getMonth(),
+			year=date.getFullYear();
+		events=[];
+		this.currentEvents.forEach(function(item){
+			if(item.day==day && item.month==month && item.year==year){
+				events.push(item);
+			}
+		});
+		return events;
+	}
 
 	/* Repaint */
 	ChupiEventCalendar.prototype.refresh=function(){
